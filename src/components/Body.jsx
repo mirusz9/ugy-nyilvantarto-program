@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import AddUgyForm from "./AddUgyForm/AddUgyForm";
-import "./Body.css"
+import styles from "./Body.module.css";
 
 class Body extends Component {
 	render() {
 		return (
-			<div className="body">
+			<div className={styles.body}>
 				<AddUgyForm />
 			</div>
 		);
@@ -13,4 +13,3 @@ class Body extends Component {
 }
 
 export default Body;
-
