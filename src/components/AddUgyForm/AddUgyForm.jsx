@@ -5,32 +5,29 @@ import PeresUgyForm from "./PeresUgyForm";
 import styles from "./AddUgyForm.module.css";
 
 class AddUgyForm extends Component {
+	state = {
+		peres: true,
+	}
+
+	handleChooseButtonClicked(peres) {
+		this.setState({
+			peres
+		})
+	}
+
 	render() {
 		return (
 			<div className={styles.addUgyFormContainer}>
 				<form>
 					<div id={styles.topBar}>
-						{/*TODO change theese into buttons and save it in state*/}
-						<input
-							className={styles.hidden}
-							type="radio"
-							id={styles.peres}
-							name="peres"
-							defaultChecked
-						/>
-						<label htmlFor={styles.peres}>Peres</label>
-						<input
-							className={styles.hidden}
-							type="radio"
-							id={styles.nemPeres}
-							name="peres"
-						/>
-						<label htmlFor={styles.nemPeres}>Nem peres</label>
+						<button type="button" onClick={() => this.handleChooseButtonClicked(true)}>Peres</button>
+
+						<button type="button" onClick={() => this.handleChooseButtonClicked(false)}>Nem peres</button>
 						<button type="button" id={styles.closeButton}>
 							<AiOutlineClose id={styles.closeIcon} size="2rem" />
 						</button>
 					</div>
-					<PeresUgyForm />
+					{this.state.peres ? <PeresUgyForm /> : <h1>nem peres</h1>}
 				</form>
 			</div>
 		);
