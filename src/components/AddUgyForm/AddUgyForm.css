@@ -1,0 +1,49 @@
+.hidden {
+	display: none;
+}
+
+form {
+	width: 100%;
+}
+
+.addUgyFormContainer {
+	margin: 1rem;
+	display: flex;
+	flex: 1;
+	box-shadow: 0 0 .5rem .1rem black;
+}
+
+
+#topBar label {
+	font-family: "Bebas Neue", cursive;
+	font-size: 2rem;
+	padding: .5rem 1rem;
+	float: left;
+}
+
+#topBar label:hover {
+	background-color:#444;
+}
+
+#closeButton {
+	background-color: transparent;
+	border: none;
+	color: #aaa;
+	margin: 0;
+	padding: 0.5vw;
+	float: right;
+}
+
+#closeButton:hover {
+	background-color: #444;
+	cursor: pointer;
+}
+
+#closeButton:focus,
+#closeButton:active {
+	outline: none;
+}
+
+#closeIcon {
+	vertical-align: middle;
+}
