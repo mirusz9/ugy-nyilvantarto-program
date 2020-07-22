@@ -1,0 +1,19 @@
+.input {
+	background-color: transparent;
+	font-family: Roboto, sans-serif;
+	font-weight: 300;
+	font-size: 1rem;
+	color: lightgrey;
+	border: none;
+	border-bottom: 1px solid grey;
+	margin: 1rem;
+	padding: 0.5rem 0.1rem;
+}
+
+.input::placeholder {
+	color: grey;
+}
+
+.input:focus {
+	outline: none;
+}
