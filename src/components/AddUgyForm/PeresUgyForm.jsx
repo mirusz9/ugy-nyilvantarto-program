@@ -8,28 +8,32 @@ class PeresUgyForm extends Component {
 		return (
 			<div className={styles.PeresUgyFormContainer}>
 				<FormSection label="Ügyfél adatai">
-					<Input
-						type="text"
-						name="ugyfelNev"
-						placeholder="Ügyfél neve"
-						required
-					/>
-					<Input
-						type="tel"
-						name="ugyfelTel"
-						placeholder="Ügyfél telefonszáma"
-					/>
-					<Input
-						type="email"
-						name="ugyfelEmail"
-						placeholder="Ügyfél email címe"
-					/>
+					<Input type="text" name="ugyfelNev" required big>
+						Ügyfél neve
+					</Input>
+					<Input type="tel" name="ugyfelTel">
+						Ügyfél telefonszáma
+					</Input>
+					<Input type="email" name="ugyfelEmail">
+						Ügyfél email címe
+					</Input>
 				</FormSection>
-				{/* <input type="text" name="ugyTargya" placeholder="Ügy tárgya" required />
-				<input type="text" name="birosag" placeholder="Melyik bíróságon folyik" />
-				<input type="text" name="birosagiUgySzam" placeholder="Bírósági ügyszám" />
-				<input type="text" name="irodaiUgySzam" placeholder="Irodai ügyszám" />
-				<input type="text" name="alperes" placeholder="Alperes" />
+				<FormSection label="ügy adatai">
+					<Input type="text" name="ugyTargya" required>
+						Ügy tárgya
+					</Input>
+					<Input type="text" name="birosag">
+						Melyik bíróságon folyik
+					</Input>
+					<Input type="text" name="birosagiUgySzam">
+						Bírósági ügyszám
+					</Input>
+					<Input type="text" name="irodaiUgySzam">
+						Irodai ügyszám
+					</Input>
+				</FormSection>
+
+				{/* <input type="text" name="alperes" placeholder="Alperes" />
 				<input type="text" name="felperes" placeholder="Felperes" /> */}
 			</div>
 		);

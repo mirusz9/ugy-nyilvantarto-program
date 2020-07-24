@@ -24,6 +24,7 @@ form {
 
 #topBar button:hover {
 	background-color: #444;
+	cursor: pointer;
 }
 
 #closeButton {

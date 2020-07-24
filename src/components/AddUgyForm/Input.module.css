@@ -17,3 +17,11 @@
 .input:focus {
 	outline: none;
 }
+
+.inputContainer {
+	display: block;
+}
+
+.big {
+	width: 20rem;
+}

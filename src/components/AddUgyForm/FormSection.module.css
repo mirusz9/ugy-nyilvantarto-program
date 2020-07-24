@@ -1,8 +1,14 @@
 .fieldset {
 	display: inline-block;
+	border: none;
+	box-shadow: 0 0 0.5rem -0.1rem black;
+	margin: 1rem;
+	vertical-align: top;
 }
 
 .legend {
+	border: 1px solid grey;
+	background-color: #222;
 	margin: auto;
-	padding: 1rem;
+	padding: .5rem 1rem;
 }
