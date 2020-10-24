@@ -1,0 +1,55 @@
+.itemContainer {
+	background-color: #20272d;
+	font-family: 'Rubik', sans-serif;
+	padding: 0.5rem 1rem;
+	margin: 5px;
+	display: flex;
+	flex-direction: row;
+}
+
+.item__leftSide {
+	flex: 1;
+}
+
+.item__CaseName {
+	font-family: 'Rubik', sans-serif;
+	color: #eee;
+	font-size: 2rem;
+	margin-bottom: .3rem;
+}
+
+.item__ContactList {
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+}
+
+.item__Contact {
+	font-family: 'Rubik', sans-serif;
+	color: darkgray;
+	font-weight: 300;
+	display: inline-block;
+	margin-right: 15px;
+}
+
+.item__rightSide {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+}
+
+.item__Details {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	color: darkgray;
+}
+.item__Details h4 {
+	font-family: 'Rubik', sans-serif;
+}
+
+.icon {
+	vertical-align: middle;
+	margin: 0 .5rem;
+}
