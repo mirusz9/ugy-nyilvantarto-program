@@ -12,6 +12,8 @@ class Body extends Component {
 				<CaseListItem/>
 				<CaseListItem/>
 				<CaseListItem/>
+		
+
 
 			</div>
 		);

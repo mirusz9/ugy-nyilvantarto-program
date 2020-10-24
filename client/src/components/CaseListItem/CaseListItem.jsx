@@ -9,7 +9,7 @@ const CaseListItem = (props) => {
 			<div className={styles.item__leftSide}>
 				<h4 className={styles.item__CaseName}>Nagy Károly autót lopott</h4>
 				<div className={styles.item__ContactList}>
-					<h5 className={styles.item__Contact}>Kovács István</h5>
+					<h5 className={styles.item__Contact}>Kovács István Béla</h5>
 					<h5 className={styles.item__Contact}>+36 12 3456789</h5>
 					<h5 className={styles.item__Contact}>kovacs.pista@nubmail.com</h5>
 				</div>

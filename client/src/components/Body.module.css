@@ -2,4 +2,26 @@
 	background-color: #171717;
 	color: white;
 	flex: 1;
+	overflow-y: scroll;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #20272d;
+	margin: 5px 0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #3c4c55;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #67b67e;
 }
