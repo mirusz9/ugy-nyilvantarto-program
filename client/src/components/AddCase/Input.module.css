@@ -1,3 +1,7 @@
+::-webkit-calendar-picker-indicator {
+	color: red;
+}
+
 .input {
 	flex: 1;
 	background-color: transparent;
@@ -16,7 +20,6 @@
 }
 
 .input:focus {
-	margin: .3rem 1rem 0.5rem 1rem;
 	outline: none;
 }
 
@@ -25,6 +28,10 @@
 	border: none;
 	margin: 0;
 	padding: 0;
+}
+
+.withLegend {
+	margin: 0.3rem 1rem 0.5rem 1rem;
 }
 
 .legend {

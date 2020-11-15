@@ -4,24 +4,40 @@ import styles from './Input.module.css';
 const Input = (props) => {
 	const { type, name, required, children } = props;
 
-	const [state, setState] = useState({ focused: false });
+	const [state, setState] = useState({
+		focused: false,
+		value: '',
+	});
 
 	const handleInputOnFocus = (focused) => {
-		setState({ focused });
+		setState((prevState) => {
+			return { focused, value: prevState.value };
+		});
+	};
+
+	const withLegend = () => {
+		return type === 'date' || state.focused || state.value;
+	};
+
+	const handleOnChange = ({ target: { value } }) => {
+		setState((prevState) => {
+			return { focused: prevState.focused, value };
+		});
 	};
 
 	return (
 		<fieldset className={styles.fieldset}>
-			{state.focused && <legend className={styles.legend}>{children}</legend>}
+			{withLegend() && <legend className={styles.legend}>{children}</legend>}
 			<input
-				className={styles.input}
+				className={`${styles.input} ${withLegend() ? styles.withLegend : ''}`}
 				type={type}
 				name={name}
-				placeholder={!state.focused && children}
+				placeholder={!withLegend() ? children : ''}
 				required={required}
 				autocomplete="off"
 				onFocus={() => handleInputOnFocus(true)}
 				onBlur={() => handleInputOnFocus(false)}
+				onChange={handleOnChange}
 			/>
 		</fieldset>
 	);
