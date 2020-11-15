@@ -1,7 +1,10 @@
 .fieldset {
-	display: inline-block;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+
 	border: none;
-	box-shadow: 0 0 0.5rem -0.1rem black;
+	box-shadow: 0 0 0.5rem 0rem black;
 	margin: 1rem;
 	vertical-align: top;
 }
@@ -9,7 +12,8 @@
 .legend {
 	border: 1px solid grey;
 	background-color: #222;
+	font-size: 1.5rem;
 	color: white;
 	margin: auto;
-	padding: .5rem 1rem;
+	padding: .5rem 1rem .2rem 1rem;
 }

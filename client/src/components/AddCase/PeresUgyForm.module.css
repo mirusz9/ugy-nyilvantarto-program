@@ -1,3 +1,5 @@
-.PeresUgyFormContainer {
-	clear: both;
+
+.firstRow {
+	display: flex;
+	flex-direction: row;
 }

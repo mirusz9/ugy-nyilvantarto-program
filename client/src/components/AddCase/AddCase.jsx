@@ -13,6 +13,9 @@ const AddCase = ({handleCloseBtnClicked}) => {
 		});
 	};
 
+
+	
+
 	return (
 		<div className={styles.addUgyFormContainer}>
 			<form>
