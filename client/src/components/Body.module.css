@@ -1,6 +1,5 @@
 .body {
 	background-color: #171717;
-	color: white;
 	flex: 1;
 	overflow-y: scroll;
 }

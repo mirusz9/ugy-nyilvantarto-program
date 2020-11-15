@@ -24,18 +24,24 @@
 	justify-content: left;
 }
 
-.item__Contact {
-	font-family: 'Rubik', sans-serif;
-	color: darkgray;
-	font-weight: 300;
-	display: inline-block;
+.item__ContactList h5 {
 	margin-right: 15px;
 }
 
-.item__rightSide {
+.smallText {
+	font-family: 'Rubik', sans-serif;
+	color: darkgray;
+	font-weight: 300;
+	font-size: 13.3px;
+	display: inline-block;
+}
+
+.item__rightSideSection {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	border-left: 1.5px solid darkgray;
+	padding: 0 0.5rem;
 }
 
 .item__Details {
@@ -43,12 +49,19 @@
 	flex-direction: row;
 	justify-content: left;
 	color: darkgray;
+	margin: 2px;
 }
-.item__Details h4 {
+.item__rightSideSection h4 {
 	font-family: 'Rubik', sans-serif;
+	color: darkgray;
 }
 
-.icon {
+.bigIcon {
 	vertical-align: middle;
-	margin: 0 0.5rem;
+	margin-right: 0.5rem;
+}
+
+.smallIcon {
+	vertical-align: baseline;
+	margin-right: 0.2rem;
 }

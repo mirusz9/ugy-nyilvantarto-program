@@ -3,14 +3,18 @@ form {
 }
 
 .addUgyFormContainer {
-	margin: 1rem;
+	background: #20272d;
+	margin: 5px;
+}
+
+#topBar {
 	display: flex;
-	flex: 1;
-	box-shadow: 0 0 0.5rem 0.1rem black;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 #topBar button {
-	font-family: "Bebas Neue", cursive;
+	font-family: 'Bebas Neue', cursive;
 	font-size: 2rem;
 	background-color: transparent;
 	color: white;
@@ -18,12 +22,13 @@ form {
 	padding: 0.5rem 1rem;
 }
 
-#topBar button:active, #topBar button:focus {
+#topBar button:active,
+#topBar button:focus {
 	outline: none;
 }
 
 #topBar button:hover {
-	background-color: #444;
+	background-color: #3C4C55;
 	cursor: pointer;
 }
 
@@ -33,11 +38,10 @@ form {
 	color: #aaa;
 	margin: 0;
 	padding: 0.5vw;
-	float: right;
 }
 
 #closeButton:hover {
-	background-color: #444;
+	background-color: #3C4C55;
 	cursor: pointer;
 }
 
