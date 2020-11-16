@@ -4,8 +4,7 @@ import Input from './Input';
 import styles from './PeresUgyForm.module.css';
 
 const PeresUgyForm = () => {
-
-		/* 
+	/* 
 	Ügyfél neve 
 	Ügyfél telefonszáma
 	Ügyfél email címe
@@ -32,6 +31,9 @@ const PeresUgyForm = () => {
 					</Input>
 					<Input type="email" name="ugyfelEmail">
 						Ügyfél email címe
+					</Input>
+					<Input type="text" name="kutyanev">
+						A kutyád neve
 					</Input>
 				</FormSection>
 				<FormSection label="ügy adatai">

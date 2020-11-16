@@ -1,5 +1,5 @@
 import React from 'react';
-import CaseList from './CaseList';
+import CaseList from './CaseList/CaseList';
 import AddCase from './AddCase/AddCase';
 import styles from './Body.module.css';
 

@@ -13,8 +13,8 @@ const CaseListItem = ({ peres }) => {
 		<div className={styles.itemContainer}>
 			<div className={styles.item__leftSide}>
 				<h4 className={styles.item__CaseName}>
-					Közös tulajdon
-					{/* Közös tulajdon megszüntetése iránti per */}
+					{/* Közös tulajdon */}
+					Közös tulajdon megszüntetése iránti per
 				</h4>
 				<div className={styles.item__ContactList}>
 					<h5 className={styles.smallText}>Kovács István Béla József</h5>

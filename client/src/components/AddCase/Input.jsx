@@ -34,7 +34,7 @@ const Input = (props) => {
 				name={name}
 				placeholder={!withLegend() ? children : ''}
 				required={required}
-				autocomplete="off"
+				autoComplete="off"
 				onFocus={() => handleInputOnFocus(true)}
 				onBlur={() => handleInputOnFocus(false)}
 				onChange={handleOnChange}
