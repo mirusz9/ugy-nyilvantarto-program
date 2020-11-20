@@ -5,6 +5,7 @@ form {
 .addUgyFormContainer {
 	background: #20272d;
 	margin: 5px;
+	flex: 1;
 }
 
 #topBar {

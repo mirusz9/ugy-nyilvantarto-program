@@ -1,0 +1,20 @@
+.AddMeetingBtn {
+	margin: 10px;
+	flex: 1;
+	height: 5rem;
+	background: transparent;
+	cursor: pointer;
+	outline: none;
+	border: none;
+
+}
+
+.AddMeetingBtn:hover {
+	background: #3c4c55;
+}
+
+.plusIcon {
+	color: #aaa;
+	margin: 1rem;
+}
+

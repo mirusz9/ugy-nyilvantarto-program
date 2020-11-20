@@ -16,7 +16,12 @@ const Input = (props) => {
 	};
 
 	const withLegend = () => {
-		return type === 'date' || state.focused || state.value;
+		return (
+			type === 'date' ||
+			type === 'datetime-local' ||
+			state.focused ||
+			state.value
+		);
 	};
 
 	const handleOnChange = ({ target: { value } }) => {
@@ -27,7 +32,15 @@ const Input = (props) => {
 
 	return (
 		<fieldset className={styles.fieldset}>
-			{withLegend() && <legend className={styles.legend}>{children}</legend>}
+			{withLegend() && (
+				<legend
+					className={`${styles.legend} ${
+						state.focused ? styles.highlightLegend : styles.focusedLegendColor
+					}`}
+				>
+					{children}
+				</legend>
+			)}
 			<input
 				className={`${styles.input} ${withLegend() ? styles.withLegend : ''}`}
 				type={type}

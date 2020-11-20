@@ -1,0 +1,27 @@
+.meetingContainer {
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	padding: 10px;
+	margin: 0 10px;
+	border-bottom: 4px solid #3c4c55;
+}
+
+.trashBtn {
+	background: transparent;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	flex: 0.1;
+}
+
+.trashBtn:hover {
+	background: #3c4c55;
+}
+
+.trashIcon {
+	color: #aaa;
+	vertical-align: middle;
+}
+
+

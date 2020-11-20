@@ -3,14 +3,14 @@ import CaseListItem from './CaseListItem';
 
 const CaseList = () => {
 	return (
-		<React.Fragment>
+		<div>
 			<CaseListItem />
 			<CaseListItem />
 			<CaseListItem />
 			<CaseListItem />
 			<CaseListItem />
 			<CaseListItem />
-		</React.Fragment>
+		</div>
 	);
 };
 

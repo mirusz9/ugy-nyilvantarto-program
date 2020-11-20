@@ -1,4 +1,6 @@
 .body {
+	display: flex;
+	flex-direction: column;
 	background-color: #171717;
 	flex: 1;
 	overflow-y: scroll;

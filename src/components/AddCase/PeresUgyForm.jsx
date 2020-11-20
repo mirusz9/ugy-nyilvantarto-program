@@ -1,6 +1,7 @@
 import React from 'react';
 import FormSection from './FormSection';
 import Input from './Input';
+import AddMeetings from './AddMeetings';
 import styles from './PeresUgyForm.module.css';
 
 const PeresUgyForm = () => {
@@ -23,7 +24,7 @@ const PeresUgyForm = () => {
 		<div className={styles.PeresUgyFormContainer}>
 			<div className={styles.firstRow}>
 				<FormSection label="Ügyfél adatai">
-					<Input type="text" name="ugyfelNev" required big>
+					<Input type="text" name="ugyfelNev" required>
 						Ügyfél neve
 					</Input>
 					<Input type="tel" name="ugyfelTel">
@@ -65,9 +66,8 @@ const PeresUgyForm = () => {
 					</Input>
 				</FormSection>
 			</div>
+			<AddMeetings />
 
-			{/* <input type="text" name="alperes" placeholder="Alperes" />
-				<input type="text" name="felperes" placeholder="Felperes" /> */}
 		</div>
 	);
 };

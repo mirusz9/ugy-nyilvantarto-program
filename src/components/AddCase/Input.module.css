@@ -7,6 +7,7 @@
 	background-color: transparent;
 	font-family: Roboto, sans-serif;
 	font-weight: 300;
+	height: 2rem;
 	font-size: 1rem;
 	color: lightgrey;
 	border: none;
@@ -21,11 +22,12 @@
 
 .input:focus {
 	outline: none;
-	border-bottom: 1px solid #67B67E;
+	border-bottom: 1px solid #67b67e;
 }
 
 .fieldset {
 	display: flex;
+	flex: 1;
 	border: none;
 	margin: 0;
 	padding: 0;
@@ -35,8 +37,16 @@
 	margin: 0.3rem 1rem 0.5rem 1rem;
 }
 
-.legend {
+.highlightLegend {
+	color: #67b67e;
+	font: 40rem;
+}
+
+.focusedLegendColor {
 	color: lightgrey;
+}
+
+.legend {
 	font-family: Roboto, sans-serif;
 	font-weight: 300;
 	font-size: 0.8rem;
