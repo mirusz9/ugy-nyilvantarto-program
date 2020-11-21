@@ -33,9 +33,7 @@ const PeresUgyForm = () => {
 					<Input type="email" name="ugyfelEmail">
 						Ügyfél email címe
 					</Input>
-					<Input type="text" name="kutyanev">
-						A kutyád neve
-					</Input>
+
 				</FormSection>
 				<FormSection label="ügy adatai">
 					<Input type="text" name="ugyTargya" required>

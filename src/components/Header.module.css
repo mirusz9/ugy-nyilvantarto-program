@@ -9,13 +9,13 @@
 	border-bottom: 1px solid #67B67E;
 }
 
-#appName {
+.appName {
 	font-family: 'Bebas Neue', cursive;
 	font-size: 3rem;
 	margin: 0.7rem 2rem 0.3rem 2rem;
 }
 
-#addButton {
+.addButton {
 
 	font-family: 'Bebas Neue', cursive;
 	font-size: 2.5rem;
@@ -28,11 +28,11 @@
 	padding: 0 1.5rem;
 	cursor: pointer;
 }
-#addButton:hover {
+.addButton:hover {
 	background-color: #3C4C55;
 
 }
 
-#plusIcon {
+.plusIcon {
 	vertical-align: middle;
 }

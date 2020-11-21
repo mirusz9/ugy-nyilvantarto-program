@@ -5,23 +5,44 @@ import { AiOutlinePlus } from 'react-icons/ai';
 import styles from './AddMeetings.module.css';
 
 const AddMeetings = () => {
-	const [state, setState] = useState({ numOfMeetings: 3 });
+	// meetings is an array of numbers, 
+	// meetingId always increments when a new meeting is added
+	const [state, setState] = useState({
+		meetings: [],
+		meetingId: 0,
+	});
 
+	// Add the new id, and increment it to ensure that every id is unique
 	const handleAddButtonClick = () => {
 		setState((prev) => {
-			return { numOfMeetings: prev.numOfMeetings + 1 };
+			return {
+				meetings: [...prev.meetings, prev.meetingId],
+				meetingId: prev.meetingId + 1,
+			};
 		});
 	};
 
-	const handleDeleteClick = (key) => {
-		console.log(key);
-	}
+	// Find the index of the id to remove, and remove it
+	// meetingId doesn't increment
+	const handleDeleteClick = (id) => {
+		setState((prev) => {
+			prev.meetings.splice(prev.meetings.indexOf(id), 1);
+			return {
+				meetings: [...prev.meetings],
+				meetingId: prev.meetingId,
+			};
+		});
+	};
 
 	return (
 		<FormSection label="Tárgyalások">
-			{Array.from({ length: state.numOfMeetings }).map((_, i) => {
-				return <MeetingInput key={i} handleDeleteClick={handleDeleteClick}/>;
-			})}
+			{state.meetings.map((key) => (
+				<MeetingInput
+					key={key}
+					id={key}
+					handleDeleteClick={handleDeleteClick}
+				/>
+			))}
 			<button
 				className={styles.AddMeetingBtn}
 				type="button"
