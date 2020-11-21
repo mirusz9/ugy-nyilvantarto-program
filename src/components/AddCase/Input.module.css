@@ -1,6 +1,18 @@
 ::-webkit-calendar-picker-indicator {
-	color: red;
+	border-radius: 4px;
+	background: grey;
+	cursor: pointer;
 }
+
+::-webkit-calendar-picker-indicator:hover {
+	background: #3c4c55;
+}
+
+::-webkit-calendar-picker-indicator:focus {
+	outline: none;
+
+}
+
 
 .input {
 	flex: 1;

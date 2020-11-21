@@ -51,6 +51,7 @@ const Input = (props) => {
 				onFocus={() => handleInputOnFocus(true)}
 				onBlur={() => handleInputOnFocus(false)}
 				onChange={handleOnChange}
+				
 			/>
 		</fieldset>
 	);

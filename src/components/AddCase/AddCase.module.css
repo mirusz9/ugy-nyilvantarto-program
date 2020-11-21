@@ -29,7 +29,7 @@ form {
 }
 
 #topBar button:hover {
-	background-color: #3C4C55;
+	background-color: #3c4c55;
 	cursor: pointer;
 }
 
@@ -42,8 +42,9 @@ form {
 }
 
 #closeButton:hover {
-	background-color: #3C4C55;
+	background-color: #3c4c55;
 	cursor: pointer;
+	color: red;
 }
 
 #closeButton:focus,
@@ -53,4 +54,8 @@ form {
 
 #closeIcon {
 	vertical-align: middle;
+}
+
+#submitButton:hover {
+	color: lightgreen;
 }

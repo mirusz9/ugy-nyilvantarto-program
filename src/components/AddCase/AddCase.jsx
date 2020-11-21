@@ -4,7 +4,7 @@ import PeresUgyForm from './PeresUgyForm';
 
 import styles from './AddCase.module.css';
 
-const AddCase = ({handleCloseBtnClicked}) => {
+const AddCase = ({ handleCloseBtnClicked }) => {
 	const [state, setState] = useState({ peres: true });
 
 	const handleChooseButtonClicked = (peres) => {
@@ -12,9 +12,6 @@ const AddCase = ({handleCloseBtnClicked}) => {
 			peres,
 		});
 	};
-
-
-	
 
 	return (
 		<div className={styles.addUgyFormContainer}>
@@ -35,9 +32,16 @@ const AddCase = ({handleCloseBtnClicked}) => {
 							Nem peres
 						</button>
 					</div>
-					<button type="button" id={styles.closeButton} onClick={handleCloseBtnClicked}>
-						<AiOutlineClose id={styles.closeIcon} size="2rem" />
-					</button>
+					<div>
+						<button type="submit" id={styles.submitButton}>Submit</button>
+						<button
+							type="button"
+							id={styles.closeButton}
+							onClick={handleCloseBtnClicked}
+						>
+							<AiOutlineClose id={styles.closeIcon} size="2rem" />
+						</button>
+					</div>
 				</div>
 				{state.peres ? <PeresUgyForm /> : <h1>nem peres</h1>}
 			</form>
