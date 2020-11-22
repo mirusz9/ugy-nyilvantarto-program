@@ -4,8 +4,8 @@ import MeetingInput from './MeetingInput';
 import { AiOutlinePlus } from 'react-icons/ai';
 import styles from './AddMeetings.module.css';
 
-const AddMeetings = () => {
-	// meetings is an array of numbers, 
+const AddMeetings = ({ handleValueChange, handleDeleteValues }) => {
+	// meetings is an array of numbers,
 	// meetingId always increments when a new meeting is added
 	const [state, setState] = useState({
 		meetings: [],
@@ -25,6 +25,12 @@ const AddMeetings = () => {
 	// Find the index of the id to remove, and remove it
 	// meetingId doesn't increment
 	const handleDeleteClick = (id) => {
+		handleDeleteValues([
+			`${id}-meeting-name`,
+			`${id}-meeting-birosag`,
+			`${id}-meeting-time`,
+		]);
+
 		setState((prev) => {
 			prev.meetings.splice(prev.meetings.indexOf(id), 1);
 			return {
@@ -41,6 +47,7 @@ const AddMeetings = () => {
 					key={key}
 					id={key}
 					handleDeleteClick={handleDeleteClick}
+					handleValueChange={handleValueChange}
 				/>
 			))}
 			<button

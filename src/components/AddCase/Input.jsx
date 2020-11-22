@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from './Input.module.css';
 
 const Input = (props) => {
-	const { type, name, required, children } = props;
+	const { type, name, required, handleValueChange, children } = props;
 
 	const [state, setState] = useState({
 		focused: false,
@@ -25,6 +25,7 @@ const Input = (props) => {
 	};
 
 	const handleOnChange = ({ target: { value } }) => {
+		handleValueChange(name, value);
 		setState((prevState) => {
 			return { focused: prevState.focused, value };
 		});
@@ -51,7 +52,6 @@ const Input = (props) => {
 				onFocus={() => handleInputOnFocus(true)}
 				onBlur={() => handleInputOnFocus(false)}
 				onChange={handleOnChange}
-				
 			/>
 		</fieldset>
 	);
